@@ -18,9 +18,17 @@ k = int(input('Число k '))
 """ вариант 1
 list_changed = list_new[k:] + list_new[:k]
 print(list_changed) """
+# вариант 2 через цикл
+"""
 for i in range(k):
     for j in range(len(list_new) - 1):
         temp = list_new[j]
         list_new[j] = list_new[j + 1]
         list_new[j + 1] = temp
+print(list_new)"""
+
+# вариант 3 через методы pop и insert
+for i in range(k + 1, n+1):
+    temp = list_new.pop()
+    list_new.insert(0, temp)
 print(list_new)
