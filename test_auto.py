@@ -53,9 +53,9 @@ Q, Z – 10 очков.
 # слова k и выводит его. Будем считать, что на вход подается только одно слово,
 # которое содержит либо только английские, либо только русские буквы.
 k = 'ноутбук'
-"""" 
+
 list_1 = ['н', 'о', 'т']
-list_2 = ['y', 'к', 'п']
+list_2 = ['у', 'к', 'п']
 list_3 = ['б', 'ь', 'я']
 count_num = 0
 for i in range(len(k)):
@@ -67,8 +67,8 @@ for i in range(len(k)):
         count_num += 3
     else:
         continue
-print(count_num)"""
-
+print(count_num)
+"""
 points_en = {1: 'AEIOULNSTR', 2: 'DG', 3: 'BCMP', 4: 'FHVWY', 5: 'K', 8: 'JX', 10: 'QZ'}
 points_ru = {1: 'АВЕИНОРСТ', 2: 'ДКЛМПУ', 3: 'БГЁЬЯ', 4: 'ЙЫ', 5: 'ЖЗХЦЧ', 8: 'ШЭЮ', 10: 'ФЩЪ'}
 word = k.upper()  # переводим все буквы в верхний регистр
@@ -82,4 +82,4 @@ for i in word:
         for j in points_en:
             if i in points_ru[j]:
                 count = count + j
-print(count)
+print(count) """
