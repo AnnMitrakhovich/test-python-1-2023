@@ -5,3 +5,8 @@
 4. Выбрать данные где housing_median_age < 20 и
 median_house_value > 70000
 """
+
+import pandas as pd
+data = pd.read_csv('california_housing_test.csv')
+
+print(data[data['median_income'] < 2][['median_house_value', 'median_income']])
