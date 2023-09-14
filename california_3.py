@@ -8,3 +8,4 @@ median_income = 3.1250
 """
 import pandas as pd
 data = pd.read_csv('california_housing_test.csv')
+print(f'{data["median_house_value"].min()} - минимальное, {data["median_house_value"].max()} - максимальное значение median_house_value')
