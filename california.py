@@ -10,3 +10,7 @@ import pandas as pd
 data = pd.read_csv('california_housing_test.csv')
 print(type(data))
 
+# https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.describe.html]
+# вся полезная информация о работе с таблицей
+
+
