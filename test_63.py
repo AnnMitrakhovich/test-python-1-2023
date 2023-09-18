@@ -11,6 +11,7 @@ import matplotlib.pyplot as plt
 data = pd.read_csv('california_housing_test.csv')
 
 
+"""
 def first():
     households = data.households
     population = data.population
@@ -20,6 +21,17 @@ def first():
     plt.show()
 
 
-first()
+first() """
+
 
 def second_point():
+    longitude = data.longitude
+    median_house_value = data.median_house_value
+    plt.plot(longitude, median_house_value)
+    plt.xlabel("longitude")
+    plt.ylabel("median_house_value")
+    plt.title("Визуализация longitude по отношению к median_house_value")
+    plt.show()
+
+
+second_point()
