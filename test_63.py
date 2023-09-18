@@ -10,7 +10,6 @@ import matplotlib.pyplot as plt
 
 data = pd.read_csv('california_housing_test.csv')
 
-
 """
 def first():
     households = data.households
@@ -23,7 +22,7 @@ def first():
 
 first() """
 
-
+"""
 def second_point():
     longitude = data.longitude
     median_house_value = data.median_house_value
@@ -35,3 +34,11 @@ def second_point():
 
 
 second_point()
+"""
+
+
+def third():
+    housing_median_age = data.housing_median_age
+    plt.hist(housing_median_age, bins=10)
+    plt.show()
+third()
