@@ -7,6 +7,7 @@
 """
 import pandas as pd
 import matplotlib.pyplot as plt
+import seaborn as si
 
 data = pd.read_csv('california_housing_test.csv')
 
@@ -36,9 +37,18 @@ def second_point():
 second_point()
 """
 
-
+"""
 def third():
     housing_median_age = data.housing_median_age
     plt.hist(housing_median_age, bins=10)
     plt.show()
 third()
+"""
+
+
+def four():
+    si.histplot(data=data, x="median_house_value", hvt="housing_median_age")
+    plt.show()
+
+
+four()
