@@ -12,8 +12,8 @@ data = pd.read_csv('california_housing_test.csv')
 
 
 def first():
-    households = list(data.households)
-    population = list(data.population)
+    households = data.households
+    population = data.population
     plt.scatter(households, population)
     plt.xlabel("households")
     plt.ylabel("population")
@@ -21,3 +21,5 @@ def first():
 
 
 first()
+
+def second_point():
